@@ -68,6 +68,12 @@ padding: 0;
 /*
 End of some modern-normalize.css --------------------------------------*/
 
+.container {
+  display:flex;
+   flex-direction: row-reverse;
+}
+
+
 form {
     width:max(25rem,60vw);
     background-color: white;
@@ -161,24 +167,22 @@ input:user-invalid {
 
 
 
-.container {
-  display:flex;
-  flex-direction: row-reverse;
-  justify-content: flex-start;
-  align-items: flex-start;
-  overflow: hidden;
-
+.img-container {
+  position:relative;
+  width:40vw;
+  left:0vw;
+  overflow:hidden;
 }
 
-
+#img-credit {
+  position:absolute;
+  color:white;
+  z-index: 1;
+}
 
 img {
-  flex-shrink: 1;
+  position: absolute;
+  right:0;
+  max-height:1600px;
 }
-
-/* html {
-  background: url(images/bg-img.jpg) no-repeat;
-  background-size:cover;
-  over
-} */
 

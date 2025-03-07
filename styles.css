@@ -70,7 +70,7 @@ End of some modern-normalize.css --------------------------------------*/
 
 .container {
   display:flex;
-   flex-direction: row-reverse;
+   flex-direction: row;
 }
 
 
@@ -165,37 +165,57 @@ input:user-invalid {
 }
 
 
-.logo-bg {
-  background-color: rgb(0, 0, 0,0.6);
-  height:200px;
-  z-index: 1;
-  margin-top:300px;
-  position:relative;
-}
 
-#logo {
-}
 
 .img-container {
-  position:relative;
   width:40vw;
-  left:0vw;
-  overflow:hidden;
   display:flex;
   flex-direction: column;
 }
 
-#img-credit {
-  /* position:absolute; */
-  color:white;
-  z-index: 1;
-  margin-top:auto;
-  align-self: center;
-}
-
 img {
-  position: absolute;
-  right:0;
-  max-height:1600px;
+  max-height:1400px;
 }
 
+
+html {
+  background-image: url(images/bg-img.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
+
+
+.logo-container {
+  height:220px;
+  margin-top:300px;
+  width:auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo-pic {
+
+  height:180px;
+}
+
+#logo-text {
+  color:white;
+  font-family: 'Norse','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size:150px;
+  letter-spacing: 0.01em;
+}
+
+#img-credit {
+  margin-top:auto;
+  margin-bottom:15px;
+  color:white;
+  text-align: center;
+}
+
+a {
+  color:white;
+}
